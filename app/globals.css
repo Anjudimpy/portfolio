@@ -1,33 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer components {
+    .nav-link{
+        @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:content-[''] 
+        after:transition after:duration-300 after:origin-center hidden 
+    }
+   .nav-link-mobile{
+    @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:content-[''] 
+    after:transition after:duration-300 after:origin-center
+}
+  .heading{
+    @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase
+  }
+}
+.vedio-button {
+  position: relative;
+  background-color: #55e6a5;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+
+  border-radius: 50%;
+ 
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin: 0 14px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.vedio-button::before,
+.vedio-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+ 
+}
+
+.vedio-button::before {
+  background-color: #55e6a58e;
+  animation: waveo 2s infinite;
+  padding: 10px;
+}
+
+.vedio-button::after {
+  background-color:transparent;
+  animation: wavee 1s infinite;
+}
+
+@keyframes waveo {
+ 
+  0% {
+    box-shadow: 0 0 0 0;
+  }
+  50% {
+    box-shadow: 0 0 20px #55e6a5;
+    opacity: 0;
+    transform: scale(1.7);
+  }
+ 
+  100% {
+    box-shadow: 0 0 20px #55e6a5;
+    opacity: 0;
+    transform: scale(1.7);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes wavee {
+  0% {
+    transform: scaleX(1);
+  }
+
+  25% {
+    transform: scaleX(1.1);
+  }
+
+  50% {
+    transform: scaleX(1);
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.dropdown-content{
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  color:#00274dd6;
+}
+.dropdown-content:hover{
+  color: #fff;
+}
+.dropdown-content::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height:180%;
+  background: #55e6a5b4;
+  z-index: -1;
+  transition: 0.8s;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.dropdown-content:hover::before{
+  width: 100%;
+}
+.bgimage1{
+  background-image: url('/pro1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgimage2{
+  background-image: url('/pro2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgimage3{
+  background-image: url('/pro3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgimage4{
+  background-image: url('/pro4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgimage5{
+  background-image: url('/pro5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgimage6{
+  background-image: url('/pro6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
