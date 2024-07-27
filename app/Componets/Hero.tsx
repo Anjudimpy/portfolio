@@ -41,7 +41,7 @@ py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-cen
 </button>
 </div>
 </div>
-<div data-aos="zoom-in" className='w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px]'>
+<div data-aos="zoom-in" className='w-[450px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[450px]'>
 <Image
         src="/dp1.png" // Correct path
         alt="user"
