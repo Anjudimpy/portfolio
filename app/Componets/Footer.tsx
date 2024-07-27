@@ -108,11 +108,7 @@ const Footer = () => {
  <div className='text-[16px] mb-[2rem] mt-[2rem] pb-[2rem] flex justify-center md:mb-0 text-white opacity-20'>
 Webdev Anju 2024 | All Rights Reserved
  </div>
- {/* <div className='flex items-center space-x-10'>
-    <p className='text-[16px] text-white opacity-20'>Terms & Condition</p>
-    <p className='text-[16px] text-white opacity-20'>Privacy Policy</p>
-    <p className='text-[16px] text-white opacity-20'>Sitemap</p>
- </div> */}
+
     </div>
     {/* </div> */}
     </footer>
