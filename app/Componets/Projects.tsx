@@ -17,7 +17,7 @@ lg:grid-cols-3 gap-[3rem]'>
         duration-200  w-[100%] h-[200px] md:h-[300px]'>
           <Link href={'https://netlifyyt-2plw.vercel.app/'} className='font-bold text-transparent text-[18px] underline under flex w-full justify-center mt-[35%] group-hover:text-white bg-transparent '>
             Live Demo {'->'}  </Link>
-            <Link href={'https://github.com/Anjudimpy/netlifyyt'} className='font-bold text-transparent text-[18px] underline under flex w-full justify-center group-hover:text-white '>
+            <Link href={'https://github.com/Anjudimpy/ampeet'} className='font-bold text-transparent text-[18px] underline under flex w-full justify-center group-hover:text-white '>
             Code Link {'->'} </Link>
 
         </div>
