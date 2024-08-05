@@ -32,7 +32,7 @@ I possess extensive export in designing, developing, and
 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2'>
   <p>Download Cv</p>
   <a
-        href="/cv.pdf"
+        href="/cv1.pdf"
         download="ANJU_CV.pdf"
         className=""
       >
